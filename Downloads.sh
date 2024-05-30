@@ -7,6 +7,9 @@ url_list="url_list.txt"
 while IFS= read -r url
 do
   # 在这里处理每个网址，例如访问网址、下载内容等
+if [[ $url == #* ]]; then
+        continue
+    fi
   echo "处理网址： $url"
   yt-dlp --proxy 192.168.1.20:8889 --no-playlist $url
 done < "$url_list"
