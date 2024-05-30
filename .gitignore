@@ -2,3 +2,6 @@
 *.mp4
 .idea
 .DS_Store
+*.ytdl
+*.part
+*.bak
