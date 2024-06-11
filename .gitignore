@@ -10,3 +10,6 @@
 *.pt
 *.db
 *.log
+*.list
+*.db-shm
+*.db-wal
