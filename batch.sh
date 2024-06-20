@@ -8,6 +8,6 @@ for file in *.list; do
             continue
         fi
         echo "$url"
-        yt-dlp --proxy 192.168.1.20:8889 -f "bestvideo[height<=?1080]+bestaudio/best[height<=?1080]" -o "$dir_name/%(title)s.%(ext)s" $url --no-playlist
+        yt-dlp --proxy 127.0.0.1:8889 -f "bestvideo[height<=?1080]+bestaudio/best[height<=?1080]" -o "$dir_name/%(title)s.%(ext)s" $url --no-playlist
     done <"$file"
 done
