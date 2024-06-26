@@ -13,3 +13,5 @@
 *.list
 *.db-shm
 *.db-wal
+*.webm
+*.mkv
